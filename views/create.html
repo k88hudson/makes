@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<a class="persona-button login"><span class="text">login</span><span class="tip"></span></a>
+<a class="logout hidden">logout</a>
+
+<form>
+  <label class="persona-email"></label>
+  <label for="url">URL:</label>
+  <input name="url" type="url">
+  <input name="submit" type="submit">
+</form>
+
+<h1>{{view}}</h1>
+<p>Welcome to {{view}}</p>
+{% endblock %}

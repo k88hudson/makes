@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>title</title>
+    <link rel="stylesheet" href="/css/persona-button.css">
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    {% block content %}{% endblock %}
+    <script src="/js/lib/require.js"></script>
+    <script>
+       require(['/js/common.js'], function (common) {
+        require(['app/{{view}}']);
+      });
+    </script>
+  </body>
+</html>

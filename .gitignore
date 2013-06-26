@@ -1,0 +1,6 @@
+www-built
+www-ghpages
+node_modules/*
+public/css/*.css
+.DS_Store
+.env
